@@ -109,7 +109,7 @@ Automatic idle locking remains an open decision. Manual locking depends on user 
 - Avoid passing user input to shell commands.
 - Validate both entered and loaded values.
 
-**T10. Disclosure through output or clipboard use.** Displayed information may remain in terminal history. copied passwords may be read by other programs.
+**T10. Disclosure through output or clipboard use.** Displayed information may remain in terminal history. Copied passwords may be read by other programs.
 
 **Intended mitigations:**
 
@@ -120,7 +120,7 @@ Cleanup cannot revoke copies already obtained by another application.
 
 ## Planned verification
 
-During implementation, should be checked that incorrect passwords and modified vaults are rejected, locked sessions cannot access entries, malformed input fails safely, failed saves preserve prior data and application output contains no secrets. Review secret-buffer cleanup separately; passing functional tests will not prove complete memory erasure.
+During implementation, verify that incorrect passwords and modified vaults are rejected, locked sessions cannot access entries, malformed input fails safely, failed saves preserve prior data and application output contains no secrets. Review secret-buffer cleanup separately; passing functional tests will not prove complete memory erasure.
 
 ## References
 

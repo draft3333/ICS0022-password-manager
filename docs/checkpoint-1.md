@@ -79,5 +79,5 @@ The exact field layout and whether metadata will live in the vault or in a separ
 - Specify record serialization, input limits and authentication of the complete vault structure.
 - Decide how passwords will be retrieved, including any clipboard handling.
 - Design safe saving, failure handling and session locking.
-- Complete the threat model for the master password, vault at rest, vault in memory and interface.
-- Add build and run instructions as the application becomes runnable.
+- Review and maintain the [completed initial threat model](threat-model.md) as the design develops.
+- Verify the [planned build and run instructions](../README.md#planned-build-and-run) once the initial application is runnable.
